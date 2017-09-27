@@ -23,13 +23,24 @@ public class Calculadora {
         // TODO code application logic here
          InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader (isr);
-        System.out.println("**** Bienvendio al sumador **** \n Introduce el primer numero a sumar: \n Introduce el segundo numero a sumar: ");
+       
        Scanner sc = new Scanner(System.in);
+        System.out.println("**** Bienvendio al sumador **** \nIntroduce el primer numero a sumar: ");
        //String cadena = sc.nextLine();
         String cadena;
         cadena = br.readLine();
        int numero = Integer.parseInt (cadena);
+       
+       Scanner sc2 = new Scanner(System.in);
+       System.out.println("Introduce el segundo numero a sumar: " );
+       //String cadena = sc.nextLine();
+        String cadena2;
+        cadena2 = br.readLine();
+       int numero2 = Integer.parseInt (cadena2);
+       System.out.println("El resultdao es: "+ (numero  +  numero2));
+       
 
     }
     
 }
+
